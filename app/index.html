@@ -8,10 +8,7 @@
 </head>
 <body>
     Test!
-    <ul>
-        <li ng-repeat=""
-    </ul>
-    <script src="/scripts/app.js"></script>
+<ui-view></ui-view>
 
 <!-- AngularJS -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
@@ -28,25 +25,24 @@
  <!-- AngularUI Bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>    
    
-    <script>
-    // Initialize Firebase
-    var config = {
-        apiKey: "AIzaSyDDD6MUDUPGBwqkRiELzHZtmRy9yJP-UQo",
-        authDomain: "bloc-chat-a8a06.firebaseapp.com",
-        databaseURL: "https://bloc-chat-a8a06.firebaseio.com",
-        projectId: "bloc-chat-a8a06",
-        storageBucket: "bloc-chat-a8a06.appspot.com",
-        messagingSenderId: "475447597301"
-        };
-    firebase.initializeApp(config);
-    </script>
+<!-- Initialize Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
     
-    <script src="bower_components/angular-modal-service/dst/angular-modal-service.min.js"></script>
+<script>
+  var config = {
+    apiKey: "AIzaSyDDD6MUDUPGBwqkRiELzHZtmRy9yJP-UQo",
+    authDomain: "bloc-chat-a8a06.firebaseapp.com",
+    databaseURL: "https://bloc-chat-a8a06.firebaseio.com",
+    projectId: "bloc-chat-a8a06",
+    storageBucket: "bloc-chat-a8a06.appspot.com",
+    messagingSenderId: "475447597301"
+  };
+  firebase.initializeApp(config);
+</script>
 
-    <script src="/scripts/app.js"></script>
+    <script src="scripts/app.js"></script>
     <script src="scripts/MainCtrl.js"></script>
     <script src="scripts/Room.js"></script>
     <script src="scripts/ModalCtrl.js"></script>    
-    
 </body>
 </html>

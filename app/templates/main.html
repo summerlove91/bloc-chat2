@@ -1,1 +1,7 @@
-<h1>Home page</h1>
+<h1>Bloc Chat</h1>
+<ul ng-repeat = "room in rooms"> 
+    <li> {{ room.name }} </li>
+</ul>
+<div class="modal-container">
+    <button ng-click="addRoom()">Click Here to create a New Room</button>
+</div>
