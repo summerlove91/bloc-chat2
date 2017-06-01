@@ -1,7 +1,22 @@
-<h1>Bloc Chat</h1>
-<ul ng-repeat = "room in rooms"> 
-    <li> {{ room.name }} </li>
-</ul>
-<div class="modal-container">
-    <button ng-click="addRoom()">Click Here to create a New Room</button>
+<div class="both-column">
+    <div class="left-box">
+        <h1>Bloc Chat</h1>
+            <ul ng-repeat = "room in rooms"> 
+                <li ng-click="setCurrentRoom(room)"> {{ room.name }} </li>
+                </ul>
+        <div class="modal-container">
+        <button ng-click="addRoom()" class="new-room-button">Click Here to create a New Room</button>
+        </div>
+    </div>
+    
+    <div class="right-box">
+        <h3 class="room-title"> {{ currentRoom.name }}</h3>
+        <div class="messages"  ng-repeat = "message in messages">
+            <div class="username">{{ message.username }}</div>
+            <div class="content">{{ message.content }}</div>
+            <div class="sent-time">{{ message.sentAt }}</div>
+        </div>
+    Recent messages
+    </div>
+
 </div>

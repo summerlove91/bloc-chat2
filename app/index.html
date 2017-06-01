@@ -5,9 +5,11 @@
     <title>Bloc Chat</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Heebo|Russo+One" rel="stylesheet">
 </head>
 <body>
-    Test!
+    
 <ui-view></ui-view>
 
 <!-- AngularJS -->
@@ -39,10 +41,11 @@
   };
   firebase.initializeApp(config);
 </script>
-
+    
     <script src="scripts/app.js"></script>
     <script src="scripts/MainCtrl.js"></script>
     <script src="scripts/Room.js"></script>
-    <script src="scripts/ModalCtrl.js"></script>    
+    <script src="scripts/ModalCtrl.js"></script>
+    <script src="scripts/Message.js"></script>
 </body>
 </html>

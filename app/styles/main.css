@@ -1,0 +1,55 @@
+h1{
+    font-family: 'Bungee Outline', cursive;
+    padding: 25px;
+    font-size: 40px;
+}
+
+.left-box {
+    width: 40%;
+    left: 0;
+    background-color: aquamarine;
+    position: fixed;
+    height: 700px;
+    border: 0;
+}
+
+.right-box {
+    width: 60%;
+    right: 0;
+    background-color: azure;
+    position: relative;
+    float: right;
+    height: 700px;
+    border: 0;
+}
+
+.new-room-button {
+    margin-left: 30px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 15px;
+    color: black;
+    background-color: transparent;
+    border: solid 5px white;
+    padding: 5px;
+}
+
+.new-room-button: hover{
+    cursor: pointer;
+    
+}
+
+ul{
+    font-family: 'Heebo', sans-serif;
+    font-size: 18px;
+}
+
+ul:hover {
+    cursor: pointer;
+}
+
+.room-title{
+    font-family: 'Heebo', sans-serif;
+    font-size: 30px;
+    padding: 20px;
+}
+

@@ -10,7 +10,7 @@
 //    rooms.$add({name: "test"})
     
     Room.add = function(room) {
-        rooms.$add({name: "room #" + index})
+        rooms.$add(room)
      };
  
     
