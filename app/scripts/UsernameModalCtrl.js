@@ -6,7 +6,6 @@
             $uibModalInstance.close();
             console.log("username created!!")
         };
-        
     }
     
 angular

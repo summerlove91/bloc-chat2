@@ -11,12 +11,16 @@
     
     <div class="right-box">
         <h3 class="room-title"> {{ currentRoom.name }}</h3>
-        <div class="messages"  ng-repeat = "message in messages">
+        <div class="messages-line"  ng-repeat = "message in messages">
             <div class="username">{{ message.username }}</div>
             <div class="content">{{ message.content }}</div>
             <div class="sent-time">{{ message.sentAt }}</div>
         </div>
-    Recent messages
+        <div class="send-message-box">
+            <div class="message-text">
+                <input type="text" class="message-input" ng-model="newMessage.content"</div> </text></div>
+            <button class="new-message-button" type="button" ng-click="sendMessage()">Send Message</button>
+
     </div>
 
 </div>

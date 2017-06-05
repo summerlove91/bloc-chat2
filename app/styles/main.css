@@ -25,7 +25,7 @@ h1{
 }
 
 .new-room-button {
-    margin-left: 30px;
+    margin-left: 20px;
     font-family: 'Heebo', sans-serif;
     font-size: 15px;
     color: black;
@@ -53,4 +53,29 @@ ul:hover {
     font-size: 30px;
     padding: 20px;
 }
+
+.send-message-box {
+    font-family: 'Heebo', sans-serif;
+    font-size: 18px;
+    bottom: 0;
+    height: 50px;
+}
+
+input[type=text] {
+    width: 100%;
+    position: inline-block;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.messages-line {
+    border-color: lightgrey;
+    border-bottom-style: solid;
+    border-radius: 25px;
+    background-color: aquamarine;
+    margin: 10px;
+    padding-left: 20px;
+    color: black;
+    }
 
