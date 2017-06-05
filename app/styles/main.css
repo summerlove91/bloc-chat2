@@ -21,6 +21,7 @@ h1{
     float: right;
     height: 700px;
     border: 0;
+    font-family: 'Heebo', sans-serif;
 }
 
 .new-room-button {

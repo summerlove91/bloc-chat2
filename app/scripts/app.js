@@ -14,6 +14,6 @@
               });
      }
      angular
-         .module ('chatApp', ['ui.router', 'firebase', 'ui.bootstrap'])
+         .module ('chatApp', ['ui.router', 'firebase',  'ui.bootstrap', 'ngCookies'])
          .config(config);
      })();

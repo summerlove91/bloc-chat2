@@ -1,4 +1,4 @@
-(function () {
+(function() {
    
     function ModalCtrl(Room, $scope, $uibModalInstance) {
          $scope.cancel = function () {
@@ -14,5 +14,5 @@
 
 angular
     .module('chatApp')
-    .controller('ModalCtrl', ['Room', '$scope', '$uibModalInstance', ModalCtrl]);
+    .controller('ModalCtrl', ['Room', '$scope', '$uibModalInstance', '$cookies', ModalCtrl]);
 })()
