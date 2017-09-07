@@ -1,15 +1,17 @@
 <div class="both-column">
     <div class="left-box">
         <h1>Bloc Chat</h1>
-            <ul ng-repeat = "room in rooms"> 
-                <li ng-click="setCurrentRoom(room)"> {{ room.name }} </li>
-                </ul>
+            <table class = "room-names" ng-repeat = "room in rooms">
+              <tr>
+                <th class="room-name" ng-click="setCurrentRoom(room)"> {{ room.name }} </th>
+              </tr>
+            </table>
         <div class="modal-container">
-        <button ng-click="addRoom()" class="new-room-button">Click Here to create a New Room</button>
+        <button ng-click="addRoom()" class="new-room-button">Create a New Room</button>
         </div>
     </div>
-    
-    <div class="right-box">
+
+    <div class="right-box" ng-style="{'background-image': 'url(/assets/images/background.png)','background-repeat': 'no-repeat', 'background-size': 'cover'}">
         <h3 class="room-title"> {{ currentRoom.name }}</h3>
         <div class="messages-line"  ng-repeat = "message in messages">
             <div class="username">{{ message.username }}</div>
