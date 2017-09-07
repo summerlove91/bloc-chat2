@@ -6,7 +6,7 @@
                  controller: 'MainCtrl as main',
                  templateUrl: '/templates/main.html'
              });
-         
+
          $locationProvider
              .html5Mode({
                  enabled: true,
@@ -17,3 +17,5 @@
          .module ('chatApp', ['ui.router', 'firebase',  'ui.bootstrap', 'ngCookies'])
          .config(config);
      })();
+
+     
