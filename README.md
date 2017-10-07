@@ -1,8 +1,7 @@
-Bloc Chat Project starter
 
 ![alt text](app/assets/images/preview.png)
 
-This app powers Bloc Chat at
+This app powers Bloc Chat at https://git.heroku.com/evening-falls-52182.git
 
 ## Bloc Chat
 
