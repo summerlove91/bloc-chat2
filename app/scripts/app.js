@@ -2,9 +2,15 @@
      function config($stateProvider, $locationProvider) {
         $stateProvider
              .state('main', {
-                 url: '/',
+                 url: '/main',
                  controller: 'MainCtrl as main',
                  templateUrl: '/templates/main.html'
+             })
+
+             .state('landing', {
+                 url: '/',
+                 controller: 'UsernameModalCtrl as username',
+                 templateUrl: '/templates/landing.html'
              });
 
          $locationProvider
@@ -17,5 +23,3 @@
          .module ('chatApp', ['ui.router', 'firebase',  'ui.bootstrap', 'ngCookies'])
          .config(config);
      })();
-
-     

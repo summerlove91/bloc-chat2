@@ -1,14 +1,16 @@
 (function (){
- 
-    function UsernameModalCtrl($scope, $uibModalInstance, $cookies){
+
+    function UsernameModalCtrl($scope, $cookies, $location){
         $scope.setUsername = function(){
             $cookies.put('blocChatCurrentUser', $scope.username);
-            $uibModalInstance.close();
+            $location.path('/main.html');
+            // $scope.$state.go('/main');
+            // $uibModalInstance.close();
             console.log("username created!!")
         };
     }
-    
+
 angular
     .module('chatApp')
-    .controller('UsernameModalCtrl', ['$scope', '$uibModalInstance', '$cookies', UsernameModalCtrl]);
+    .controller('UsernameModalCtrl', ['$scope', '$uibModalInstance', '$cookies', '$location', UsernameModalCtrl]);
 })()

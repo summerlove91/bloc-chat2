@@ -9,15 +9,15 @@
                 templateUrl: '/templates/modal.html',
                 size: 'sm',
                 controller: 'ModalCtrl as modal',
-                backdrop: 'static'
+                backdrop: 'true'
             });
         }
-        
+
         $scope.setCurrentRoom = function(room){
             $scope.currentRoom = room;
             $scope.messages = Message.getByRoomId($scope.currentRoom.$id);
         }
-        
+
         $scope.sendMessage = function () {
             $scope.newMessage.roomId = $scope.currentRoom.$id;
             $scope.newMessage.username = $scope.currentUser;

@@ -1,5 +1,5 @@
-<div class="both-column">
-    <div class="left-box">
+<div class="container-fluid both-column">
+    <div class="col-sm-3 left-box">
         <h1>Bloc Chat</h1>
             <table class = "room-names" ng-repeat = "room in rooms">
               <tr>
@@ -11,16 +11,19 @@
         </div>
     </div>
 
-    <div class="right-box" ng-style="{'background-image': 'url(/assets/images/background.png)','background-repeat': 'no-repeat', 'background-size': 'cover'}">
-        <h3 class="room-title"> {{ currentRoom.name }}</h3>
-        <div class="messages-line"  ng-repeat = "message in messages">
-            <div class="username">{{ message.username }}</div>
-            <div class="content">{{ message.content }}</div>
-            <div class="sent-time">{{ message.sentAt }}</div>
+    <div class="col-sm-5 right-box">
+        <div class="message-content">
+          <h3 class="room-title"> {{ currentRoom.name }}</h3>
+          <div class="messages-line"  ng-repeat = "message in messages">
+              <div class="username">{{ message.username }}</div>
+              <div class="content">{{ message.content }}</div>
+              <div class="sent-time">{{ message.sentAt }}</div>
+          </div>
         </div>
         <div class="send-message-box">
             <div class="message-text">
                 <input type="text" class="message-input" ng-model="newMessage.content"></div>
-            <button class="new-message-button" type="button" ng-click="sendMessage()">Send Message</button></div>
+            <button class="new-message-button" type="button" ng-click="sendMessage()">Send Message</button>
+        </div>
     </div>
 </div>

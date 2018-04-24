@@ -1,30 +1,79 @@
+/* Landing page styling */
+
+.landing-blocchat{
+  background-color: gray;
+  width: 50%;
+  height: 600px;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  margin: auto;
+}
+
+.landing-logo{
+  padding-top: 130px;
+}
+
+.type-username{
+  margin-bottom: 5px;
+  width: 24vw;
+  height: 6vh;
+  font-size: 2vw;
+  text-align: center;
+}
+
+.set-username-button{
+  width: 25vw;
+  height: 6vh;
+  font-size: 2vw;
+}
+
+.message-input{
+  font-size: 20px;
+}
+
+/* Main chat page styling */
+
 h1{
     font-family: 'Bungee Outline';
-    padding: 25px;
+    padding: 20px;
     font-size: 50px;
     text-align: center;
     color: white;
     text-shadow: 1px black;
 }
 
+.both-column {
+  margin: auto;
+  position: relative;
+  padding-top: 0;
+  border: 1px solid grey;
+  background-color: #F5F5F5;
+  width: 700px;
+  border-radius: 10px;
+}
+
 .left-box {
     border-radius: 10px;
-    width: 25%;
-    left: 0;
     background-color: grey;
-    position: fixed;
-    height: 715px;
+    display:inline-block;
     border: 0;
+    top:0;
+    width: 220px;
 }
 
 .right-box {
-    width: 75%;
-    right: 0;
-    opacity: 0.7;
-    float: right;
-    height: 715px;
-    border: 0;
+    /*position: fixed;*/
+    height: auto;
+    bottom: 0;
+    display:inline-block;
     font-family: 'Heebo', sans-serif;
+}
+
+.message-content{
+  position: absolute;
+  top: 0;
+  padding-left: 20px;
 }
 
 .new-room-button {
@@ -42,18 +91,18 @@ h1{
 
 table{
     width: 100%;
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Open Sans';
     font-size: 20px;
     position: relative;
     border-collapse: collapse;
 }
 
 th{
-    border: 0.2px solid white;
+    border: 0.2px solid lightgray;
     margin:0;
     padding: 0;
     height: 60px;
-    background-color: lightgrey;
+    background-color: #F5F5F5;
 }
 
 .room-name:hover {
@@ -61,33 +110,32 @@ th{
 }
 
 .room-name {
-    padding: : 20px;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 20px;
+    padding: : 10px;
 }
 
 .send-message-box {
     font-family: 'Heebo', sans-serif;
     font-size: 18px;
     bottom: 0;
+    width: 50%;
 }
 
 .message-input {
     font-size: 15px;
-    padding: 12px 20px;
-    border-radius: 7px;
+    padding: 11px 93px;
+    /*border-radius: 7px;*/
     position: absolute;
-    bottom: 10px;
-    width: 90%;
+    display: inline-block;
+    bottom: 0;
 }
 
 .new-message-button {
   font-size: 15px;
   border-radius: 5px;
   background-color: lightblue;
-  padding: 12px 20px;
+  padding: 12px 10px;
   right: 0;
-  bottom: 10px;
+  bottom: 0px;
   position: absolute;
   display: inline-block;
 }
@@ -112,4 +160,9 @@ th{
   @media (min-width: 1024px) {
      html { font-size: 120%; }
     /* Style information will go here */
+  }
+
+  .create-room-modal{
+    z-index: 100;
+    position: relative;
   }
