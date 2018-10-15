@@ -1,5 +1,6 @@
 
-![alt text](app/assets/images/preview.png)
+![alt text](app/assets/images/bloc-chat-photo1.png)
+![alt text](app/assets/images/bloc-chat-photo2.png)
 
 This app powers Bloc Chat at https://git.heroku.com/evening-falls-52182.git
 

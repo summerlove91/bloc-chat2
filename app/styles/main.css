@@ -2,7 +2,7 @@
 
 .landing-blocchat{
   background-color: gray;
-  width: 50%;
+  width: 35%;
   height: 600px;
   border-radius: 10px;
   position: relative;
@@ -18,14 +18,17 @@
   margin-bottom: 5px;
   width: 24vw;
   height: 6vh;
-  font-size: 2vw;
+  font-size: 1.8vw;
   text-align: center;
+  border-radius: 5px;
 }
 
 .set-username-button{
-  width: 25vw;
+  width: 24.5vw;
   height: 6vh;
-  font-size: 2vw;
+  border-radius: 5px;
+  font-size: 1.8vw;
+  background-color: #F5F5F5;
 }
 
 .message-input{
